@@ -186,7 +186,7 @@ class: in-person
 
 - All the content is publicly available (slides, code samples, scripts)
 
-- There will be a coffee break at 10:30am
+- There will be a coffee break around 10:30am
   <br/>
   (please remind me if I forget about it!)
 
@@ -268,73 +268,21 @@ grep '^# ' index.html | grep -v '<br' | tr '#' '-'
 
 class: in-person
 
-## Chapter 1: getting started
+## Table of contents
 
-- Pre-requirements
-
-- VM environment
-
-- Our sample application
-
-- Running the application
-
+- Pre-requirements & VM environment
+- Discovering our sample application
 - Identifying bottlenecks
-
 - Introducing SwarmKit
-
----
-
-class: in-person
-
-## Chapter 2: scaling out our app on Swarm
-
 - Creating our first Swarm
-
-- Docker Machine
-
-- Running our first Swarm service
-
+- Running our first Swarm services
 - Deploying a local registry
-
-- Overlay networks
-
-- Global scheduling
-
-- Scripting image building and pushing
-
+- Build, ship, and run our sample application
 - Integration with Compose
-
----
-
-class: in-person
-
-## Chapter 3: operating the Swarm
-
-- Breaking into an overlay network
-
-- Securing overlay networks
-
 - Rolling updates
-
-- (Secrets management and encryption at rest)
-
 - [Centralized logging](#logging)
-
 - Metrics collection
-
----
-
-class: in-person
-
-## Chapter 4: bonus material
-
 - Dealing with stateful services
-
-- Controlling Docker from a container
-
-- Node management
-
-- What's next?
 
 ---
 
@@ -7518,8 +7466,8 @@ AJ ([@s0ulshake](https://twitter.com/s0ulshake)) — *For hire!*
       var slideshow = remark.create({
         ratio: '16:9',
         highlightSpans: true,
-        excludedClasses: ["in-person", "elk-auto", "prom-auto"]
-        //excludedClasses: ["self-paced", "extra-details", "advertise-addr", "docker-machine", "netshoot", "sbt", "ipsec", "node-info", "swarmtools", "secrets", "encryption-at-rest", "elk-manual", "snap", "prom-manual"]
+        //excludedClasses: ["in-person", "elk-auto", "prom-auto"]
+        excludedClasses: ["self-paced", "extra-details", "advertise-addr", "docker-machine", "netshoot", "sbt", "ipsec", "node-info", "swarmtools", "secrets", "encryption-at-rest", "elk-manual", "snap", "prom-manual"]
       });
     </script>
   </body>
