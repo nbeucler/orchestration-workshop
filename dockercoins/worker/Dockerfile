@@ -1,4 +1,4 @@
-FROM python
+FROM armhf/python
 RUN pip install redis
 RUN pip install requests
 COPY worker.py /
