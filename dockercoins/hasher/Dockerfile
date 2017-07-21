@@ -1,4 +1,4 @@
-FROM ruby:alpine
+FROM armhf/ruby
 RUN apk add --update build-base
 RUN gem install sinatra
 RUN gem install thin
