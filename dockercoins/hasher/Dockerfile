@@ -1,5 +1,5 @@
 FROM armhf/ruby:alpine
-RUN apk add --update build-base
+RUN apt-get install build-base
 RUN gem install sinatra
 RUN gem install thin
 ADD hasher.rb /
